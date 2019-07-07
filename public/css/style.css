@@ -1,0 +1,611 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    
+}
+
+p{
+    color: #4b555f;
+    line-height: 28px;
+}
+
+.normal-button{
+    background-color: #1c46f2;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 14px 20px;
+    border: 1px solid #1c46f2;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.normal-button:hover{
+    transform: translate(0,-5px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.144);
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-weight: 400;
+}
+
+em{
+    font-family: 'Playfair Display', serif;
+}
+header h1{
+    display:none;
+}
+/*---------------------------Menu----------------------------------------------*/
+nav{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    position:fixed;
+    top:0;
+    z-index: 2;
+}
+
+.logo{
+    padding: 5px 0;
+    width: 15%;
+    margin-left: 5%;
+}
+
+/*Send links to the right*/
+.wrapmenu{
+    justify-self: flex-end;
+    margin-right: 10%;
+    background-color: #fff;
+}
+
+/*Remove decoration of the unorder list*/
+.menu {
+    list-style: none;
+    background-color: #fff;
+}
+
+/*Makes the list items of the menu 12px size and also inline block*/
+.menu li{
+    display: inline-block;
+    margin: 0 15px;
+    color: #292929;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/*On hover changes the link and menu items*/
+
+.menu a{
+    text-decoration: none;
+}
+.menu a:visited{
+    color:#292929
+}
+.menu li:hover, .menu a:hover{
+    color:#1c46f2;
+}
+/*Makes the submenu display none and its position absolute, also adds shadow to make ti a box*/
+.servicios-submenu{
+    display:none;
+    position: absolute;
+    padding: 0;
+    border-top: 2px solid #1c46f2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #ffff;
+}
+
+
+.servicios-submenu li{
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin:0;
+}
+
+
+
+/*Makes the submenu appears on hover*/
+.servicios:hover .servicios-submenu{
+    display:block;
+}
+
+.servicios i{
+    font-size: 12px;
+}
+
+#hamburger-icon{
+    display:none;
+}
+
+/*---------------------------Pagina home--------------------------------------------------------------*/
+/*-----------------------------World Section--------------------------------------------*/
+
+.world-image{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../images/world.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    padding:60px 0;
+    margin-top:60px;
+}
+
+.world-image-text-wrapper{
+    width: 40%;
+}
+
+.world-image-text-wrapper h2{
+    font-size: 50px;
+}
+
+.world-image-text-wrapper p{
+    color: #fff;
+}
+
+
+.title-world-image{
+    color:rgb(23, 0, 102);
+}
+
+
+.text-world-image{
+    font-weight: 700;
+}
+
+.form-wrapper{
+    text-align: center;
+    width: 40%;
+    justify-self: flex-end;
+    background-color:#001fef;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.form-wrapper h3{
+    color: #fff;
+}
+
+.form-image textarea{
+    resize: vertical;
+    max-height: 300px;
+}
+
+.form-image input{
+    height: 25px;
+}
+
+.form-image input, 
+.form-image textarea{
+    margin:10px auto;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    transition: all .1s ease-in-out;
+    padding: 5px;
+}
+.form-image .image-input{
+    width: 29%;
+}
+
+.form-image .image-name{
+    margin-right: 10px;
+}
+.email-image,
+.form-image textarea{
+    width: 63%;
+}
+
+.form-button{
+    width: 32.5%;
+    border-radius: 0.25rem;
+    height: 37px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border:none;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.form-button:hover{
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+/*-----------------------------Servicios--------------------------------------------*/
+
+.servicios{
+    margin-top: 50px;
+}
+
+.titulo-servicios{
+    color:#292929;
+    font-weight: 400;
+    font-size: 32px;
+    margin:100px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.service-cards,
+.our-value-card{
+    width: 250px;
+    height: auto;
+    padding: 35px;
+    box-shadow: 0 30px 80px 0 rgba(20,52,92,.2);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    margin-top: 30px;
+}
+
+.service-cards:hover,
+.our-value-card:hover{
+    box-shadow: 0 40px 100px 0 rgba(20,52,92,.3);
+    transform: translate(0,-10px);
+}
+
+.service-cards i{
+    font-size: 40px;
+    color:#001fef;
+}
+
+.service-cards button{
+    margin: 0 auto;
+}
+
+
+/*-----------------------------Objetivos--------------------------------------------*/
+.objectives-chain{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 150px;
+    align-items: center;
+    background-color: rgb(240, 240, 240)
+}
+.side-image{
+    background-image: url(../images/TeamWork.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 50%;
+}
+
+.objectives-text{
+    width: 30%;
+    padding: 110px;
+}
+
+.objectives-text span{
+    color:#1c46f2;
+}
+
+.objectives-text h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/*Improve screen placing */
+@media screen and  (max-width: 1117px){
+.objectives-text{
+    width: 20%;
+    padding: 100px;
+    }
+}
+
+/*-----------------------------Nuestros Trabajos--------------------------------------------*/
+
+.trabajos{
+    text-align: center;
+}
+.outer-card h3, .trabajos button{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.trabajos button{
+    width: 240px;
+}
+
+.trabajos-card{
+    width: 300px;
+    height: 300px;
+    padding:0;
+}
+
+.service-cards img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------------------------Quote Blue--------------------------------------------*/
+
+.quote-blue{
+    background-color: #1c46f2;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    margin: 50px 0 ;
+    color: #fff;
+}
+
+.quote-blue div{
+    margin: 0 auto;
+    width: 500px;
+    padding: 100px 0;
+}
+
+.quote-blue span{
+    color: #999999
+}
+
+.quote-blue h2{
+    font-size: 30px;
+}
+
+.quote-blue button{
+    background-color: #ffffff;
+    color: #1c46f2;
+}
+
+/*-----------------------------Pagina Nosotros--------------------------------------*/
+
+/*-----Titulo inicial----------------------------------------------------------------*/
+#title-section{
+    margin:0 auto;
+    margin-top:60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(219, 219, 219, 0.801);
+    padding: 10% 20%;
+}
+
+#title-section h2{
+    font-size: 32px;
+}
+#title-section em{
+    font-weight: 100;
+}
+/*-------------------------Our Value Section-------------------------------------*/
+
+#our-value{
+    margin:0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/nosotros-value.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+.our-value-card{
+    background-color: #fff;
+    width: 330px;
+    height: 311px;
+}
+
+.our-value-card h4{
+    color:#1c46f2;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.our-value-card h3{
+    font-weight: 600;
+}
+
+/*-------------------------Skills Section----------------------------------------*/
+#skills{
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 0; 
+}
+
+.skills-textos,
+.skills-barras{
+    width: 40%;
+}
+
+.bars i,
+.bars h4{
+    display:inline-block;
+}
+
+.outer-bar{
+    background-color:#e9ecef;
+    width: 500px;
+    height: 3px;
+}
+.inner-bar{
+    height: 3px;
+    background-color:rgb(28, 70, 242);
+}
+.diseno-ux{
+    width:90%;
+}
+.full-stack{
+    width:80%;
+}
+.digital-marketing{
+    width: 95%;
+}
+.social-media{
+    width: 78%;
+}
+
+/*-----------------------------Footer--------------------------------------------*/
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer, .footer-form{
+    background-color: #4a4a4a;
+}
+
+footer p{
+    width: 200px;
+    color: #fff;
+}
+
+footer .footer-text{
+    margin: 0 auto
+}
+footer .social-media{
+    display: inline-block;
+    width: 30%;
+}
+
+.footer-text-area,
+.footer-contact-area{
+    width: 25%;
+}
+
+.footer-form-area{
+    width: 50%;
+}
+
+.footer-form{
+    padding-top: 10px;
+    width: 80%;
+    box-shadow: none;
+}
+/*-----------------------------Mobile--------------------------------------------*/
+
+@media screen and  (max-width: 800px){
+/*Menu en el celular*/
+    nav{
+        display:block;
+    }
+
+    .wrapmenu{
+        margin-right:0;
+    }
+
+    .menu li,
+    .servicios-submenu {
+        position:relative;
+        display: none;
+    }
+
+    .mobile-menu li{
+        position:relative;
+        display: block;
+        font-size: 12px;
+        margin: 15px 0;
+    }
+
+    .mobile-menu{
+        text-align: center;
+        background-color: #fff;
+        z-index:2;
+    }
+
+    .mobile-submenu{
+        display: block;
+        padding: 0;
+        border-top: none;
+        box-shadow: none;
+        z-index: 1;
+        background-color: #ffff;
+    }
+
+    .mobile-submenu li{
+        padding: 2px 5px;
+        margin-left: 5px;
+    }
+
+    .servicios-submenu li:hover{
+    background-color: none;
+    }
+    
+   
+    #hamburger-icon{
+        display:block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        font-size: 25px;
+        background-color: #ffff;
+        border:0px;
+    }
+
+    #hamburger-icon:focus{
+        outline:0;
+    }
+
+/*------------Home-----------------------------------------------------------*/
+/*-------Image Area Mobile------------------------*/
+ .world-image{
+    flex-wrap: wrap;
+}
+
+.title-world-image{
+    font-size: 20px;
+}
+
+.text-world-image{
+    font-size: 15px;
+}
+
+.form-wrapper,
+.world-image-text-wrapper{
+    width: 90%;
+}
+
+
+.form-image input,
+ .form-image textarea,
+ .form-image .image-input{
+     width:70%;
+ }   
+/*-------Objectives Area Mobile------------------------*/
+.objectives-chain{
+    justify-items: center'
+} 
+
+.side-image{
+    width: 100%;
+    height: 500px;
+}
+
+.objectives-text{
+    width: 100%;
+    padding: 100px;
+    }
+
+
+/*-----------------Nosotros--------------------------------------------------------*/
+
+
+}
+
+
+
+
