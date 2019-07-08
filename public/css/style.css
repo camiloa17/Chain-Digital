@@ -376,7 +376,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(219, 219, 219, 0.801);
     padding: 10% 20%;
 }
 
@@ -421,6 +420,8 @@ nav{
     display: flex;
     justify-content: space-around;
     padding: 70px 0; 
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .skills-textos,
@@ -435,7 +436,7 @@ nav{
 
 .outer-bar{
     background-color:#e9ecef;
-    width: 500px;
+    width: 100%;
     height: 3px;
 }
 .inner-bar{
@@ -454,6 +455,46 @@ nav{
 .social-media{
     width: 78%;
 }
+
+/*-------Team Section-------------------------------------------------------------*/
+
+#team{
+    padding:70px 0;
+    background-color: #efeff0;
+}
+#team main,
+.team-text-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.team-text-wrapper h1{
+    align-self: flex-start;
+    
+}
+
+#team figure,
+.team-text-wrapper h1,
+.team-text-wrapper p{
+    display: inline-block;
+}
+
+#team figure >img{
+    width:80%;
+}
+.team-text-wrapper p{
+    width: 40%;
+}
+.team-text-wrapper h1{
+    margin-right: 30px;
+}
+
+
+
+
 
 /*-----------------------------Footer--------------------------------------------*/
 
@@ -603,7 +644,12 @@ footer .social-media{
 
 /*-----------------Nosotros--------------------------------------------------------*/
 
+/*----Skills--------------------------------------------------*/
 
+   
+   .skills-textos{
+        width: 300px;
+    }
 }
 
 

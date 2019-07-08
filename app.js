@@ -40,8 +40,7 @@ app.post("/form", function (req, res) {
         html: "<h2>Nombre: " + firstName + " " + lastName + " </h2>" + "<br />" + "<h2> Email: " + email + "</h2>" + "<p> <b>Mensaje:</b> <br>" + textArea + "</p>"
     };
     console.log(mailOptions);
-
-
+    
     transporter.sendMail(mailOptions, function (error, response) {
         console.log(response.response, error);
     });
