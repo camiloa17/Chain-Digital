@@ -467,13 +467,15 @@ nav{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
     justify-content: center;
     align-items: center;
 }
+
+.team-text-wrapper{
+    width: 100%;
+}
 .team-text-wrapper h1{
-    align-self: flex-start;
-    
+    align-self: flex-start; 
 }
 
 #team figure,
